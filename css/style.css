@@ -1,0 +1,145 @@
+h1
+{
+    text-align: center; color: white; font-family: Georgia, 'Times New Roman', Times, serif;;
+}
+
+h2
+{
+    text-align: center; color: white;
+}
+
+h3
+{
+    text-align: center; color: white;
+}
+
+p
+{
+    text-align: center; color:white; font-size: 20px; 
+}
+
+a
+{
+    color:white;
+}
+
+b
+{
+    color:white;
+}
+
+body
+{
+    background-color: black;
+    background-image: url('https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/bltfca313d1935978ff/63221a94636d390da7825e82/960_Push.webp');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#NombresBlack
+{
+    display: flex;
+    width: 600px;
+    height: auto;
+}
+
+#BlackwatchMenu, .Blackwatch
+{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+#BlackwatchMenu img,.Blackwatch
+{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+#BlackwatchMenu img,.Blackwatch:hover
+{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* Estilo para el contenedor del slider */
+.slider-container {
+    max-width: 800px;
+    margin: auto 900;
+    padding: 20px;
+}
+/* Estilo para las imágenes del slider */
+.Athena {
+    max-width: 450%; /* Mantiene el ancho máximo para mantener la relación de aspecto */
+    height: auto; /* Ajusta automáticamente la altura */
+    max-height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+article
+{
+    position: relative;
+    width: 250px;
+    transition: all .3s ease;
+}
+
+article img:first-child
+{
+    box-shadow: 0 60px 60px -60px rgba(0,30,255,0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+}
+
+article img:last-child
+{
+    position: absolute;
+    width: 200px;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+article:hover
+{
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+article::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( to bottom, transparent 10%, rgba(0,0,0,0.5) 50%, rgba(0,0,0) 95%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+article:hover::before
+{
+    opacity: 1;
+}
+
+article:hover img:last-child
+{
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+#IMGmenu
+{
+    width: 25%;
+    height: 25%;
+}
